@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};;
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -33,12 +33,12 @@ export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
-  font-weight: bold;
   text-decoration: none;
+  justify-content: center;
 `;
 
 export const MenuIcon = styled.div`
@@ -54,6 +54,10 @@ export const MenuIcon = styled.div`
     cursor: pointer;
     color: #fff;
   }
+`;
+export const HomeLogo = styled.img`
+  height: 80px;
+  width: 100px;
 `;
 
 export const NavMenu = styled.ul`
@@ -80,7 +84,9 @@ export const NavLink = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
+  font-family: Josefin Sans;
+  src: url("font/JosefinSans-Regular.ttf") format("truetype");
+  font-weight: 500;
   &.active {
     border-bottom: 3px solid #01bf71;
   }
