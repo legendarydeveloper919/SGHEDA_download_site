@@ -9,10 +9,10 @@ import {
   ArrowForward,
   ArrowRight,
   CoverH2,
-} from "./CoverElements";
+} from "./WorkElements";
 import { Button } from "../ButtonElements";
 
-const CoverSection = () => {
+const WorkSection = () => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -49,4 +49,4 @@ const CoverSection = () => {
   );
 };
 
-export default CoverSection;
+export default WorkSection;

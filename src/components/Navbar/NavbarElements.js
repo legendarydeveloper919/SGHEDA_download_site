@@ -85,7 +85,6 @@ export const NavLink = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   font-family: Josefin Sans;
-  src: url("font/JosefinSans-Regular.ttf") format("truetype");
   font-weight: 500;
   &.active {
     border-bottom: 3px solid #01bf71;
