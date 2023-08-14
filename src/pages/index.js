@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import CoverSection from "../components/CoverSection";
 import Footer from "../components/Footer";
-import InfoSection from "../components/InfoSection";
 import WorkSection from "../components/Works";
-import {
-  aboutObj,
-  discoverObj,
-  signupObj,
-} from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import Sidebar from "../components/Sidebar";
+import Description from "../components/Description";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,9 +21,7 @@ const Home = () => {
       <CoverSection />
       <Services />
       <WorkSection />
-      <InfoSection {...aboutObj} />
-      <InfoSection {...discoverObj} />
-      <InfoSection {...signupObj} />
+      <Description />
       <Footer />
     </>
   );

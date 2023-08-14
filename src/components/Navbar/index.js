@@ -10,9 +10,8 @@ import {
   NavLink,
   NavLogo,
   NavMenu,
-  NavBtn,
-  NavBtnLink,
   HomeLogo,
+  NavBtnLink,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -98,9 +97,15 @@ const Navbar = ({ toggle }) => {
                 </NavLink>
               </NavItem>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            </NavBtn>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <NavBtnLink style={{ height: "60%" }}>Download</NavBtnLink>
+            </div>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

@@ -1,15 +1,13 @@
 import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
 
 export const CoverContainer = styled.div`
+  background: #dedede;
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 30px;
   height: 1200px;
   position: relative;
-  z-index: 5;
+  z-index: -5;
 `;
 
 export const CoverBg = styled.div`
@@ -32,18 +30,18 @@ export const ImageBg = styled.img`
 
 export const CoverContent = styled.div`
   z-index: 3;
-  width: 30%;
-  position: absolute;
-  padding: 8px 24px;
+  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: left;
 `;
 
 export const CoverH1 = styled.h1`
   color: #fff;
   font-family: Josefin Sans;
   font-size: 48px;
+  display: flex;
+  flex-direction: row;
   text-align: center;
   font-weight: 500;
   margin-bottom: 15;
@@ -73,11 +71,12 @@ export const CoverH2 = styled.h1`
 `;
 
 export const CoverP = styled.p`
+  width: 80%;
   margin-top: 24px;
-  color: #fff;
-  font-size: 24px;
+  color: #67696f;
+  font-size: 28px;
   text-align: center;
-  max-width: 600px;
+  font-weight: 500;
 
   @media screen and (max-width: 768px) {
     font-size: 22px;
@@ -103,28 +102,4 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
-`;
-export const PurchaseLink = styled(Link)`
-  border-radius: 10px;
-  background: var(
-    --new-btn-color,
-    linear-gradient(180deg, #415a8a 0%, #571c1f 100%)
-  );
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: white;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: var(
-      --new-btn-color,
-      linear-gradient(180deg, #316a7a 0%, #672c3f 100%)
-    );
-  }
 `;

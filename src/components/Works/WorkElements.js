@@ -93,6 +93,14 @@ export const CoverBtnWrapper = styled.div`
   align-items: center;
 `;
 
+export const VideoBg = styled.video`
+  width: 50%;
+  height: 40%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
+`;
+
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;

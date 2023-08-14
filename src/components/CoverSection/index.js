@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   CoverContainer,
   CoverBg,
@@ -6,19 +6,10 @@ import {
   CoverContent,
   CoverH1,
   CoverBtnWrapper,
-  ArrowForward,
-  ArrowRight,
   CoverH2,
 } from "./CoverElements";
-import { Button } from "../ButtonElements";
-
+import { PurchaseLink } from "./CoverElements";
 const CoverSection = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
-
   return (
     <CoverContainer style={{ justifyContent: "flex-start" }}>
       <CoverBg style={{}}>
@@ -27,22 +18,14 @@ const CoverSection = () => {
       <CoverContent style={{ alignItems: "flex-start", marginLeft: "5%" }}>
         <CoverH1 style={{ marginBottom: 10 }}> SGHEDA</CoverH1>
         <CoverH1 style={{ textAlign: "start", marginBottom: 10 }}>
-          A tool design for geothermal energy
+          A design tool for geothermal energy
         </CoverH1>
         <CoverH2 style={{ textAlign: "start", marginBottom: 15 }}>
           A tool design for geothermal energy paving way to a more efficient and
           environmentally friendly environment
         </CoverH2>
         <CoverBtnWrapper>
-          <Button
-            to="signup"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-          >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          <PurchaseLink>Purchase</PurchaseLink>
         </CoverBtnWrapper>
       </CoverContent>
     </CoverContainer>

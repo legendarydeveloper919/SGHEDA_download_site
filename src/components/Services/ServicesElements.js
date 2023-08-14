@@ -16,7 +16,7 @@ export const ServiceBg = styled.div`
   overflow: hidden;
 `;
 export const ServicesContainer = styled.div`
-  height: 1075px;
+  height: 1275px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +78,7 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
+  font-family: Josefin Sans;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -86,11 +87,14 @@ export const ServicesH1 = styled.h1`
 `;
 
 export const ServicesH2 = styled.h2`
+  font-family: Josefin Sans;
+  text-align: center;
   font-size: 1rem;
   margin-bottom: 10px;
 `;
 
 export const ServicesP = styled.p`
-  font-size: 1rem;
+  font-family: Josefin Sans;
+  font-size: 16px;
   text-align: center;
 `;
