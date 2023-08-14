@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
 export const CoverContainer = styled.div`
+  background: #051728;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 0 30px;
   height: 1200px;
   position: relative;
-  z-index: 5;
+  z-index: -5;
 `;
 
 export const CoverBg = styled.div`
@@ -31,12 +31,11 @@ export const ImageBg = styled.img`
 
 export const CoverContent = styled.div`
   z-index: 3;
-  width: 30%;
+  width: 100%;
   position: absolute;
-  padding: 8px 24px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
 `;
 
 export const CoverH1 = styled.h1`

@@ -16,7 +16,7 @@ import {
 
 const Services = () => {
   return (
-    <ServicesContainer id="services" style={{ marginTop: -300 }}>
+    <ServicesContainer id="services" style={{ marginTop: "-400px" }}>
       <ServiceBg style={{ zIndex: -1 }}>
         <ImageBg src="image/back2.png" />
       </ServiceBg>
