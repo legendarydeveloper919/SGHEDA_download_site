@@ -22,8 +22,6 @@ export const CoverBg = styled.div`
 `;
 
 export const ImageBg = styled.img`
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 `;

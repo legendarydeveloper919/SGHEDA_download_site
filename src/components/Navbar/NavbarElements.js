@@ -101,7 +101,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.a`
   border-radius: 15px;
   background: var(
     --new-btn-color,

@@ -13,8 +13,20 @@ import {
   HomeLogo,
   NavBtnLink,
 } from "./NavbarElements";
+import dotenv from "dotenv";
+dotenv.config();
 
 const Navbar = ({ toggle }) => {
+  // const fileId = "1Q9NgQvpGtOsnwCxNkvuzsb8XhkoRwG_j"; // your file ID
+
+  // const downloadFile = async () => {
+  //   try {
+  //     const response = await axios.get("http://localhost:3001/api/download");
+  //     console.log(response.data); // 'File is being downloaded on the server'
+  //   } catch (e) {
+  //     console.error("Download failed: ", e);
+  //   }
+  // };
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -104,7 +116,13 @@ const Navbar = ({ toggle }) => {
                 alignItems: "center",
               }}
             >
-              <NavBtnLink style={{ height: "60%" }}>Download</NavBtnLink>
+              <NavBtnLink
+                style={{ height: "60%" }}
+                href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3001/api/download`}
+                rel="noreferrer"
+              >
+                Download File
+              </NavBtnLink>
             </div>
           </NavbarContainer>
         </Nav>
