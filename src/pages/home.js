@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import WorkSection from "../components/Works";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
-import Sidebar from "../components/Sidebar";
 import Description from "../components/Description";
 
 const Home = () => {
@@ -16,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       <Navbar toggle={toggle} />
       <CoverSection />
       <Services />
