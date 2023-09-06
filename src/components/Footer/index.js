@@ -32,7 +32,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <FooterLinksContainer>
+        {/* <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
@@ -72,7 +72,7 @@ const Footer = () => {
               <FooterLink to="/">Terms of Service</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
-        </FooterLinksContainer>
+        </FooterLinksContainer> */}
 
         <SocialMedia>
           <SocialMediaWrapper>
