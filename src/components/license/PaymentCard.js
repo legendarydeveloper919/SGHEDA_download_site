@@ -18,6 +18,7 @@ const PaymentCard = (props) => {
     setIsHovered(false);
   };
   const style = {
+    minWidth: "250px",
     width: "20%",
     height: "50vh",
     display: "flex",
