@@ -1,0 +1,29 @@
+.input-field {
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  font-family: "Josefin Sans";
+  outline: none;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.input-field:focus {
+  border-color: #626262;
+  animation: colorChange 10.5 infinite alternate;
+  /*
+    Add any other styles you want to apply specifically when the input is focused.
+    For example, you can change the border color to a different color or add additional styling.
+    */
+}
+
+@keyframes colorChange {
+  0% {
+    border-color: #d9d9d9;
+  }
+  50% {
+    border-color: #a6a6a6; /* Change the color to your desired animation color */
+  }
+  100% {
+    border-color: #626262;
+  }
+}

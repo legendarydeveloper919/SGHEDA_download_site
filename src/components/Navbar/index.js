@@ -62,48 +62,48 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLink
-                  to="about"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
+                  href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3000/`}
                 >
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  to="discover"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
+                  href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3000/#/about`}
                 >
                   About
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  to="services"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
+                  href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3000/#/contact`}
                 >
                   Contact
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  to="signup"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
+                  href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3000/#/license`}
                 >
                   License
                 </NavLink>

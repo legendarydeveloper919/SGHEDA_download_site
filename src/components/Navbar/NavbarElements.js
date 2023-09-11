@@ -77,7 +77,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLink = styled(LinkS)`
+export const NavLink = styled.a`
   color: #fff;
   display: flex;
   align-items: center;
