@@ -12,7 +12,7 @@ export const CoverContainer = styled.div`
   z-index: 5;
 `;
 export const PersonContainer = styled.div`
-  background-color: #051728;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   padding: 100px;

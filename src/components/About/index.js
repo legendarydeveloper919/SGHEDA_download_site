@@ -7,8 +7,8 @@ import {
   CoverH1,
   PersonContainer,
 } from "./AboutElements";
-import PersonCardLeft from "./PersonCardLeft";
-import PersonCardRight from "./PersonCardRight";
+import StoryFieldCardRight from "./StoryFieldCardRight";
+import StoryFieldCardLeft from "./StoryFieldCardLeft";
 const AboutSection = () => {
   return (
     <>
@@ -22,16 +22,29 @@ const AboutSection = () => {
             justifyContent: "center",
           }}
         >
-          <CoverH1 style={{ textAlign: "center", fontSize: "48px" }}>
+          <CoverH1
+            style={{
+              textAlign: "center",
+              fontSize: "48px",
+              textDecoration: "underline",
+            }}
+          >
+            ABOUT SGHEDA
+          </CoverH1>
+          <CoverH1
+            style={{
+              textAlign: "center",
+              fontSize: "28px",
+            }}
+          >
             SGHEDA is the ideal bridge between the latest technology and the
             people who benefit from these developments.
           </CoverH1>
         </CoverContent>
       </CoverContainer>
       <PersonContainer>
-        <PersonCardLeft />
-        <PersonCardRight />
-        <PersonCardLeft />
+        <StoryFieldCardRight />
+        <StoryFieldCardLeft />
       </PersonContainer>
     </>
   );

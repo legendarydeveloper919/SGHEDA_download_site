@@ -67,7 +67,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                  href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3000/`}
+                  href={`${process.env.REACT_APP_ADDRESS}/`}
                 >
                   Home
                 </NavLink>
@@ -79,7 +79,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                  href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3000/#/about`}
+                  href={`${process.env.REACT_APP_ADDRESS}/#/about`}
                 >
                   About
                 </NavLink>
@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                  href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3000/#/contact`}
+                  href={`${process.env.REACT_APP_ADDRESS}/#/contact`}
                 >
                   Contact
                 </NavLink>
@@ -103,7 +103,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                  href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3000/#/license`}
+                  href={`${process.env.REACT_APP_ADDRESS}/#/license`}
                 >
                   License
                 </NavLink>
@@ -118,7 +118,7 @@ const Navbar = ({ toggle }) => {
             >
               <NavBtnLink
                 style={{ height: "60%" }}
-                href={`http://${process.env.REACT_APP_SERVER_ADDRESS}:3001/api/download`}
+                href={`${process.env.REACT_APP_SERVER_ADDRESS}/api/download`}
                 rel="noreferrer"
               >
                 Download File
