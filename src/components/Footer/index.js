@@ -10,11 +10,6 @@ import {
 import {
   FooterContainer,
   FooterWrapper,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink,
   SocialMedia,
   SocialMediaWrapper,
   SocialLogo,

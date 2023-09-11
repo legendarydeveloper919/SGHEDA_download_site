@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
 
 export const CoverContainer = styled.div`
   display: flex;
