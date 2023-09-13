@@ -4,7 +4,7 @@ import {
   BasicButton,
   StandardButton,
   PremiumButton,
-} from "./LicenseElements";
+} from "./PaymentElements";
 import "./PaymentCard.css"; // Import the CSS file where the animation styles will be defined
 
 const PaymentCard = (props) => {
@@ -99,22 +99,17 @@ const PaymentCard = (props) => {
           Billed Monthly
         </CoverH1>
         {props.type === "basic" ? (
-          <BasicButton
-            href={`${process.env.REACT_APP_ADDRESS}/payment/${props.price}`}
-          >
+          <BasicButton>
             <CoverH1 style={{ fontSize: "18px" }}> Get Started</CoverH1>
           </BasicButton>
         ) : props.type === "standard" ? (
-          <StandardButton
-            href={`${process.env.REACT_APP_ADDRESS}/payment/${props.price}`}
-          >
+          <StandardButton>
             <CoverH1 style={{ fontSize: "18px" }}> Get Started</CoverH1>
           </StandardButton>
         ) : (
-          <PremiumButton
-            href={`${process.env.REACT_APP_ADDRESS}/payment/${props.price}`}
-          >
+          <PremiumButton>
             <CoverH1 style={{ fontSize: "18px", color: "black" }}>
+              {" "}
               Get Started
             </CoverH1>
           </PremiumButton>

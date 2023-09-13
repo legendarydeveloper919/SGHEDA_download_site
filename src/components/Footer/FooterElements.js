@@ -16,8 +16,8 @@ export const FooterWrapper = styled.div`
 `;
 
 export const FooterLogo = styled.img`
-  height: 160px;
-  width: 160px;
+  height: 50px;
+  width: 200px;
   margin-bottom: 10px;
 `;
 

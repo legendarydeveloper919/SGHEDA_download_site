@@ -11,6 +11,7 @@
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
     "react": "^16.14.0",
+    "react-country-region-selector": "^3.6.1",
     "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
     "react-paypal-button-v2": "^2.6.3",

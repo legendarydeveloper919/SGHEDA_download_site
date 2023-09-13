@@ -51,10 +51,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <HomeLogo src="image/logo.png" />
-              <div style={{ marginLeft: 15 }}>
-                <p>SGHEDA</p>
-              </div>
+              <HomeLogo src="/image/logo.png" />
             </NavLogo>
             <MenuIcon onClick={toggle}>
               <FaBars />
@@ -79,7 +76,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                  href={`${process.env.REACT_APP_ADDRESS}/#/about`}
+                  href={`${process.env.REACT_APP_ADDRESS}/about`}
                 >
                   About
                 </NavLink>
@@ -91,7 +88,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                  href={`${process.env.REACT_APP_ADDRESS}/#/contact`}
+                  href={`${process.env.REACT_APP_ADDRESS}/contact`}
                 >
                   Contact
                 </NavLink>
@@ -103,7 +100,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                  href={`${process.env.REACT_APP_ADDRESS}/#/license`}
+                  href={`${process.env.REACT_APP_ADDRESS}/license`}
                 >
                   License
                 </NavLink>

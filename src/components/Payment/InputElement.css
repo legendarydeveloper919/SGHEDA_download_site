@@ -1,0 +1,10 @@
+.input-field_info {
+  border: none;
+  background-color: #131a34;
+  font-family: "Josefin Sans";
+  outline: none;
+  font-size: 22px;
+  padding: 15px;
+  color: azure;
+  border-radius: 5px;
+}

@@ -48,6 +48,7 @@ const ContactSection = () => {
           style={{
             alignItems: "center",
             justifyContent: "center",
+            marginTop: "70px",
           }}
         >
           <CoverH1
@@ -80,7 +81,13 @@ const ContactSection = () => {
             padding: "30px",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginTop: "100px",
+            }}
+          >
             <CoverH1
               style={{
                 color: "#051728",
@@ -94,7 +101,7 @@ const ContactSection = () => {
             <img
               src="image/logo.png"
               alt="logo"
-              style={{ width: "70px", height: "70px", marginLeft: "30px" }}
+              style={{ width: "150px", height: "40px", marginLeft: "30px" }}
             />
           </div>
           <form onSubmit={handleSubmit}>

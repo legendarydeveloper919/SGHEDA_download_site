@@ -5,7 +5,8 @@ export const Nav = styled.nav`
   backdrop-filter: ${({ scrollNav }) => (scrollNav ? "blur(42px)" : "")};
   height: 80px;
   margin-top: -80px;
-  background: transparent;
+  background: ${({ scrollNav }) =>
+    scrollNav ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.1)"};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,8 +57,8 @@ export const MenuIcon = styled.div`
   }
 `;
 export const HomeLogo = styled.img`
-  height: 80px;
-  width: 100px;
+  height: 50px;
+  width: 200px;
 `;
 
 export const NavMenu = styled.ul`

@@ -136,14 +136,14 @@ export const PurchaseLink = styled(Link)`
     );
   }
 `;
-export const BasicButton = styled.a`
+export const BasicButton = styled.button`
+  font-family: Josefin Sans;
+  font-size: 22px;
   background-color: #55656a;
   border-radius: 5px;
   border-width: 0;
   padding: 16px;
-  margin-top: 50px;
-  text-decoration: none;
-
+  margin-top: 20px;
   display: inline-flex;
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -153,14 +153,12 @@ export const BasicButton = styled.a`
     );
   }
 `;
-export const StandardButton = styled.a`
+export const StandardButton = styled.button`
   background-color: #22c5f9;
   border-radius: 5px;
   border-width: 0;
   padding: 16px;
   margin-top: 50px;
-  text-decoration: none;
-
   display: inline-flex;
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -171,9 +169,8 @@ export const StandardButton = styled.a`
   }
 `;
 
-export const PremiumButton = styled.a`
+export const PremiumButton = styled.button`
   background-color: #e8ea78;
-  text-decoration: none;
   border-radius: 5px;
   border-width: 0;
   padding: 16px;
