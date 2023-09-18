@@ -5,7 +5,6 @@ import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 import CoinsList from "./CoinsList";
 import "./InputElement.css";
 const InputForm = () => {
-  const [buyCoin, setBuyCoin] = useState("BTC");
   const [toggle, setToggle] = useState(false);
   const [toggleCoin, setToggleCoin] = useState(false);
   function toggleCoinFunc() {
@@ -58,17 +57,7 @@ const InputForm = () => {
           />
         </div>
 
-        <CoinsList
-          toggleCoin={toggleCoin}
-          toggleCoinFunc={toggleCoinFunc}
-          handleBuy={({ currentTarget }) => {
-            setBuyCoin(
-              currentTarget.getAttribute("name")
-                ? currentTarget.getAttribute("name")
-                : "BTC"
-            );
-          }}
-        />
+        <CoinsList toggleCoin={toggleCoin} toggleCoinFunc={toggleCoinFunc} />
         <div style={{ display: "flex", justifyContent: "center" }}>
           <BasicButton style={{ color: "#fefefe", textAlign: "center" }}>
             Confirm
