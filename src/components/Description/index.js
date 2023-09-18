@@ -11,7 +11,7 @@ import "react-slideshow-image/dist/styles.css";
 const Description = () => {
   let fadeImages = [];
   let imageIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-  imageIndex.map((index, key) => {
+  imageIndex.forEach((index) => {
     fadeImages.push({ url: `/image/validation/${index}.png` });
   });
 
