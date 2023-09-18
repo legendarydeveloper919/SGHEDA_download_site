@@ -10,6 +10,7 @@ const LicenseSection = () => {
           style={{
             alignItems: "center",
             justifyContent: "center",
+            marginTop: "100px",
           }}
         >
           <CoverH1 style={{ textAlign: "center", fontSize: "40px" }}>

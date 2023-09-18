@@ -62,7 +62,6 @@ const PersonCardRight = () => {
               position: "absolute",
               bottom: 0,
               left: 0,
-              zIndex: 1,
               borderRadius: "10px",
               padding: "10px",
             }}

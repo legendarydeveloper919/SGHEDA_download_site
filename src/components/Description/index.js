@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CoverContainer,
   CoverContent,
   CoverH1,
   CoverP,
 } from "./DescriptionElements";
-import { ImageBg } from "./DescriptionElements";
+import { Fade } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const Description = () => {
+  let fadeImages = [];
+  let imageIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  imageIndex.map((index, key) => {
+    fadeImages.push({ url: `/image/validation/${index}.png` });
+  });
+
   return (
     <CoverContainer style={{ justifyContent: "flex-start", marginTop: -300 }}>
       <CoverContent style={{ marginTop: "10%", alignItems: "center" }}>
         <CoverH1 style={{ color: "#2A2F34", fontSize: "48px" }}>
-          WHAT IS{" "}
+          WHAT IS
           <CoverH1
             style={{
               marginLeft: "10px",
@@ -25,10 +32,10 @@ const Description = () => {
           </CoverH1>
         </CoverH1>
         <CoverP>
-          The purpose of the geothermal heat pump industry is to promote a
-          sustainable and decarbonized future across the globe through the
-          adoption of geothermal as the cleanest, most efficient heating and
-          cooling technology.
+          The slinky GHE configuration refers to the arrangement of the pipes in
+          a tightly coiled or helical shape resembling a slinky toy. This
+          configuration maximizes the surface area of the pipes in contact with
+          the ground, enhancing the heat transfer efficiency
         </CoverP>
         <div
           style={{
@@ -40,10 +47,25 @@ const Description = () => {
             justifyContent: "space-between",
           }}
         >
-          <ImageBg
-            src="image/validation.png"
-            style={{ padding: 100 }}
-          ></ImageBg>
+          <div style={{ width: "40%" }}>
+            <Fade>
+              {fadeImages.map((fadeImage, index) => (
+                <div
+                  key={index}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <img
+                    style={{ width: "90%", borderRadius: "20px" }}
+                    src={fadeImage.url}
+                    alt="image"
+                  />
+                </div>
+              ))}
+            </Fade>
+          </div>
           <div
             style={{
               borderRadius: 15,
@@ -64,17 +86,15 @@ const Description = () => {
               SGHEDA
             </CoverH1>
             <CoverP
-              style={{ fontSize: "20px", textAlign: "left", color: "#B4B7C5" }}
+              style={{ fontSize: "23px", textAlign: "left", color: "#B4B7C5" }}
             >
-              SGHEDA has been validated against measured data from working
-              ground heat exchangers and compared with the ASHRAE Handbook
-              Method. Applying the measured loads on the ground heat exchanger
-              as the design conditions and setting the actual peak temperatures
-              as the user-specified design temperatures, the design methods
-              should give us back the actual design. SGHEDA gave sizes within 5%
-              of actual; the ASHRAE Handbook method gave designs substantially
-              different from actual. “Why” is explained in the paper cited below
-              that details the comparison. <br /> <br />
+              We especially paid attention to this step because we know it is
+              really what our customers interested in. Trust in the accuracy and
+              reliability of our design as we leverage the industry-leading
+              computational fluid dynamics (CFD) software to simulate heat
+              transfer, fluid flow dynamics, and thermal behavior in your GHE
+              system. If you want, we can provide validation report.
+              <br /> <br />
               Cullin, J.R., J.D. Spitler, C. Montagud, F. Ruiz-Calvo, S.J. Rees,
               S.S. Naicker, P. Konečný, and L.E. Southard. 2015. Validation of
               Vertical Ground Heat Exchanger Design Methodologies. Science and

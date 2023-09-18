@@ -9,21 +9,50 @@ import {
   CoverH2,
 } from "./CoverElements";
 import { PurchaseLink } from "./CoverElements";
+import { FaCheckCircle } from "react-icons/fa";
 const CoverSection = () => {
   return (
     <CoverContainer style={{ justifyContent: "flex-start" }}>
       <CoverBg style={{}}>
         <ImageBg src="image/back1.png" type="video/mp4" />
       </CoverBg>
-      <CoverContent style={{ alignItems: "flex-start", marginLeft: "5%" }}>
-        <CoverH1 style={{ marginBottom: 10 }}> SGHEDA</CoverH1>
-        <CoverH1 style={{ textAlign: "start", marginBottom: 10 }}>
-          A design tool for geothermal energy
+      <CoverContent style={{ marginLeft: "5%" }}>
+        <CoverH1
+          style={{ marginBottom: 10, fontSize: "40px", textAlign: "center" }}
+        >
+          Slinky Ground Heat Exchanger Design & Analysis – SGHEDA
         </CoverH1>
-        <CoverH2 style={{ textAlign: "start", marginBottom: 15 }}>
-          A tool design for geothermal energy paving way to a more efficient and
-          environmentally friendly environment
+
+        <CoverH2 style={{ textAlign: "center", marginBottom: 15 }}>
+          A program for design and analysis of GHE system that utilizes a slinky
+          loop configuration
         </CoverH2>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
+          <CoverH1 style={{ fontSize: "30px", padding: "10px" }}>
+            <FaCheckCircle
+              style={{ color: "#FFFFFF", fontSize: "25px", marginRight: 10 }}
+            />
+            Commercial
+          </CoverH1>
+          <CoverH1 style={{ fontSize: "30px", padding: "10px" }}>
+            <FaCheckCircle
+              style={{ color: "#FFFFFF", fontSize: "25px", marginRight: 10 }}
+            />
+            Geothermal
+          </CoverH1>
+          <CoverH1 style={{ fontSize: "30px", padding: "10px" }}>
+            <FaCheckCircle
+              style={{ color: "#FFFFFF", fontSize: "25px", marginRight: 10 }}
+            />
+            Better Design
+          </CoverH1>
+        </div>
         <CoverBtnWrapper>
           <PurchaseLink>Purchase</PurchaseLink>
         </CoverBtnWrapper>

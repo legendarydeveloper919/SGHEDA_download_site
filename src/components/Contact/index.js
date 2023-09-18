@@ -20,7 +20,7 @@ const ContactSection = () => {
     const message = document.getElementById("text").value;
 
     const response = await fetch(
-      `http://${process.env.REACT_APP_SERVER_ADDRESS}:3001/api/send-email`,
+      `${process.env.REACT_APP_SERVER_ADDRESS}/api/message`,
       {
         method: "POST",
         headers: {

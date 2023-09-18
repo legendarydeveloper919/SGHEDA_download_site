@@ -2,8 +2,8 @@ import React from "react";
 import { CoverContainer } from "./PaymentElements";
 import PaymentCard from "./PaymentCard";
 import InputForm from "./InputForm";
+
 const PaymentSection = ({ amount }) => {
-  console.log(amount);
   return (
     <>
       <CoverContainer style={{ backgroundColor: "#051728" }}>

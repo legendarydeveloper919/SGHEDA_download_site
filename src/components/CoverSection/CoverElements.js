@@ -9,7 +9,6 @@ export const CoverContainer = styled.div`
   padding: 0 30px;
   height: 1200px;
   position: relative;
-  z-index: 5;
 `;
 
 export const CoverBg = styled.div`
@@ -31,13 +30,15 @@ export const ImageBg = styled.img`
 `;
 
 export const CoverContent = styled.div`
-  z-index: 3;
-  width: 30%;
+  width: 35%;
   position: absolute;
+  top: 30vh;
+  left: 0;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const CoverH1 = styled.h1`
@@ -93,6 +94,7 @@ export const CoverBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

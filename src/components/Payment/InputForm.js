@@ -2,8 +2,18 @@ import React, { useState } from "react";
 import InputElement from "./InputElement";
 import { CoverH1, BasicButton } from "./PaymentElements";
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
+import CoinsList from "./CoinsList";
 import "./InputElement.css";
 const InputForm = () => {
+  const [buyCoin, setBuyCoin] = useState("BTC");
+  const [toggle, setToggle] = useState(false);
+  const [toggleCoin, setToggleCoin] = useState(false);
+  function toggleCoinFunc() {
+    if (toggle) {
+      setToggle(!toggle);
+    }
+    setToggleCoin(!toggleCoin);
+  }
   const [country, setCountry] = useState("");
   const [region, setReigon] = useState("");
   return (
@@ -47,9 +57,21 @@ const InputForm = () => {
             className="input-field_info"
           />
         </div>
+
+        <CoinsList
+          toggleCoin={toggleCoin}
+          toggleCoinFunc={toggleCoinFunc}
+          handleBuy={({ currentTarget }) => {
+            setBuyCoin(
+              currentTarget.getAttribute("name")
+                ? currentTarget.getAttribute("name")
+                : "BTC"
+            );
+          }}
+        />
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <BasicButton style={{ color: "#fefefe" }}>
-            Confirm Payment
+          <BasicButton style={{ color: "#fefefe", textAlign: "center" }}>
+            Confirm
           </BasicButton>
         </div>
       </div>

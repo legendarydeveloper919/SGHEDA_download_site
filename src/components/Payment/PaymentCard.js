@@ -77,7 +77,7 @@ const PaymentCard = (props) => {
           flexShrink: "0",
         }}
       ></div>
-      <div style={{ zIndex: 10 }}>
+      <div style={{ zIndex: "1" }}>
         <CoverH1
           style={{
             textAlign: "center",

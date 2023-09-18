@@ -4,9 +4,10 @@ const StoryFieldCardLeft = () => {
   return (
     <div
       style={{
-        width: "100%",
+        width: "90%",
         display: "flex",
         justifyContent: "space-between",
+        alignItems: "center",
         marginTop: "20px",
         padding: "90px",
       }}
@@ -25,7 +26,7 @@ const StoryFieldCardLeft = () => {
       </div>
       <div
         style={{
-          width: "45%",
+          width: "55%",
           display: "flex",
           flexDirection: "column",
           padding: "30px",
@@ -50,15 +51,19 @@ const StoryFieldCardLeft = () => {
             color: "#738A9D",
           }}
         >
-          Jeff Hammond is Executive Director at the International Ground Source
-          Heat Pump Association (IGSHPA). Jeff earned a B.S. in business
-          administration from the University of Saint Francis in Fort Wayne,
-          Indiana, and an A.A.S. in electrical engineering technology from
-          Purdue University. He has over 35 years’ experience in the ground
-          source heat pump (geothermal) industry, including positions at
-          ClimateMaster, Enertech, Geo-Flo, and WaterFurnace. Jeff is a member
-          of ASHRAE (American Society of Heating, Refrigerating, and Air
-          Conditioning Engineers), AEE
+          Our collective is starting prototype construction for a blockchain
+          mining shipping container project in January using PV power at a
+          nominal 50kw of processing energy, as a primary product. <br></br>"Why
+          does everyone I know want to buy earth-friendly option, but very few
+          do?" is a question that they pondered in the year spent preparing for
+          construction. One solution required a novel application of ground
+          loops borrowed from GHSP practice, and led to the development of our
+          heat analysis engine.<br></br> So, we developed a modelling method
+          that uses sophisticated mathematical principles and fluid dynamics to
+          create an optical slinky loop configuration that can be used for any
+          use cases and validated our design using ANSYS Fluent. After going
+          through all the verification steps, we released SGHEDA and hope will
+          contribute to the world efforts for fight against climate change.
         </CoverH1>
       </div>
     </div>

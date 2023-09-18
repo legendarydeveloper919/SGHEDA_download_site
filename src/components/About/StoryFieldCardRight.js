@@ -4,16 +4,17 @@ const StoryFieldCardRight = () => {
   return (
     <div
       style={{
-        width: "100%",
+        width: "90%",
         display: "flex",
         justifyContent: "space-between",
+        alignItems: "center",
         marginTop: "20px",
-        padding: "90px",
+        padding: "100px",
       }}
     >
       <div
         style={{
-          width: "45%",
+          width: "55%",
           display: "flex",
           flexDirection: "column",
           padding: "30px",
@@ -38,15 +39,19 @@ const StoryFieldCardRight = () => {
             color: "#738A9D",
           }}
         >
-          Jeff Hammond is Executive Director at the International Ground Source
-          Heat Pump Association (IGSHPA). Jeff earned a B.S. in business
-          administration from the University of Saint Francis in Fort Wayne,
-          Indiana, and an A.A.S. in electrical engineering technology from
-          Purdue University. He has over 35 years’ experience in the ground
-          source heat pump (geothermal) industry, including positions at
-          ClimateMaster, Enertech, Geo-Flo, and WaterFurnace. Jeff is a member
-          of ASHRAE (American Society of Heating, Refrigerating, and Air
-          Conditioning Engineers), AEE
+          Imagine reducing energy bills, while contributing to the fight against
+          climate change. Yes, all this is possible with our ground heat
+          exchanger design solution, which offers environmentally-friendly and
+          cost-effective heating and cooling systems. <br></br>Whether you're a
+          homeowner, a contractor or a large organization, our program provides
+          a unique model to meet every specific need. It deals with an array of
+          use cases with the utmost precision. <br></br>Our modeling method uses
+          sophisticated mathematical principles and fluid dynamics to create an
+          optimal slinky loop configuration. It's adaptable and versatile,
+          catering to a wide range of soil and climate conditions. We believe
+          everyone could have access to sustainable, green solutions because
+          making a difference to the environment should be within everyone’s
+          reach.
         </CoverH1>
       </div>
       <div style={{ width: "40%", display: "flex", justifyContent: "center" }}>

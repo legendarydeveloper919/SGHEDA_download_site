@@ -24,31 +24,31 @@ const Services = () => {
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Multiple Zones and Multiple Heat Pumps</ServicesH2>
+          <ServicesH2>Comprehensive design capabilities</ServicesH2>
           <ServicesP>
-            Embark on larger residential projects compared to previous endeavors
-            using the exclusive residential software, incorporation of up to 10
-            zones with limitless heat pumps.
+            Our program offers a wide range of design capabilities, allowing you
+            to create GHE system tailored to your specific needs and
+            requirements
           </ServicesP>
         </ServicesCard>
 
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Accurate Result</ServicesH2>
+          <ServicesH2>Accurate Performance Analysis</ServicesH2>
           <ServicesP>
-            Create designs with assurance, utilizing the sole software founded
-            upon the calculation techniques detailed in the 2011 SGHEDA
-            Residential/Light Commercial Design Manual
+            With our program, you can accurately analyze the performance of your
+            ground heat exchanger system, taking into account factors such as
+            heat transfer rates, fluid flow, and thermal conductivity
           </ServicesP>
         </ServicesCard>
 
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Economic Analysis</ServicesH2>
+          <ServicesH2>User-Friendly Interface</ServicesH2>
           <ServicesP>
-            Embark on larger residential projects compared to previous endeavors
-            using the exclusive residential software, enabling the incorporation
-            of up to 10 zones with limitless heat pumps within each zone
+            Our program features a user-friendly interface that makes it easy to
+            navigate and utilize its powerful design and analysis capabilities,
+            even for users without extensive technical expertise
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

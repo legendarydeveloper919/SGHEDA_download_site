@@ -9,15 +9,15 @@ export const CoverContainer = styled.div`
   padding: 0 30px;
   height: 400px;
   position: relative;
-  z-index: 5;
 `;
 export const PersonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   justify-content: center;
   align-items: center;
   padding: 100px;
   position: relative;
-  z-index: 5;
 `;
 
 export const CoverBg = styled.div`
@@ -40,7 +40,6 @@ export const ImageBg = styled.img`
 
 export const CoverContent = styled.div`
   width: 80%;
-  z-index: 3;
   position: absolute;
   padding: 50px;
   display: flex;
