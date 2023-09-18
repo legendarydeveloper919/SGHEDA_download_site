@@ -49,7 +49,7 @@ const Description = () => {
         >
           <div style={{ width: "40%" }}>
             <Fade>
-              {fadeImages.map((fadeImage, index) => (
+              {fadeImages.forEach((fadeImage, index) => (
                 <div
                   key={index}
                   style={{
@@ -60,7 +60,7 @@ const Description = () => {
                   <img
                     style={{ width: "90%", borderRadius: "20px" }}
                     src={fadeImage.url}
-                    alt="image"
+                    alt={`fadeImage${index + 1}`}
                   />
                 </div>
               ))}
