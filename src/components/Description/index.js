@@ -5,15 +5,31 @@ import {
   CoverH1,
   CoverP,
 } from "./DescriptionElements";
-import { Fade } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Description = () => {
-  let fadeImages = [];
+  let slideImages = [];
   let imageIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   imageIndex.forEach((index) => {
-    fadeImages.push({ url: `/image/validation/${index}.png` });
+    slideImages.push({
+      url: `/image/validation/${index}.png`,
+      alt: `slideImage${index}`,
+    });
   });
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+  };
 
   return (
     <CoverContainer style={{ justifyContent: "flex-start", marginTop: -300 }}>
@@ -48,23 +64,17 @@ const Description = () => {
           }}
         >
           <div style={{ width: "40%" }}>
-            <Fade>
-              {fadeImages.forEach((fadeImage, index) => (
-                <div
-                  key={index}
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
+            <Slider {...settings}>
+              {slideImages.map((slideImage, index) => (
+                <div key={index}>
                   <img
                     style={{ width: "90%", borderRadius: "20px" }}
-                    src={fadeImage.url}
-                    alt={`fadeImage${index + 1}`}
+                    src={slideImage.url}
+                    alt={slideImage.alt}
                   />
                 </div>
               ))}
-            </Fade>
+            </Slider>
           </div>
           <div
             style={{
