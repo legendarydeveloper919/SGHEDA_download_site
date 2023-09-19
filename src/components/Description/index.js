@@ -61,6 +61,7 @@ const Description = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            padding: "50px",
           }}
         >
           <div style={{ width: "40%" }}>
@@ -83,6 +84,7 @@ const Description = () => {
               height: "80%",
               width: "50%",
               padding: 50,
+              overflow: "auto",
             }}
           >
             <CoverH1
@@ -96,7 +98,11 @@ const Description = () => {
               SGHEDA
             </CoverH1>
             <CoverP
-              style={{ fontSize: "23px", textAlign: "left", color: "#B4B7C5" }}
+              style={{
+                fontSize: "18px",
+                textAlign: "left",
+                color: "#B4B7C5",
+              }}
             >
               We especially paid attention to this step because we know it is
               really what our customers interested in. Trust in the accuracy and
