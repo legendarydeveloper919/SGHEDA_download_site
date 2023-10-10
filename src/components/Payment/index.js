@@ -22,7 +22,7 @@ const PaymentSection = ({ amount }) => {
           ) : (
             <PaymentCard borderColor="#E8EA78" type="premium" price="$500" />
           )}
-          <InputForm />
+          <InputForm price={amount} />
         </div>
       </CoverContainer>
     </>

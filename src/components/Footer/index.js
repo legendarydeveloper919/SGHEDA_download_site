@@ -75,7 +75,7 @@ const Footer = () => {
               <FooterLogo src="/image/logo.png" />
             </SocialLogo>
             <WebsiteRights>
-              logo © {new Date().getFullYear()} All rights reserved.
+              © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">

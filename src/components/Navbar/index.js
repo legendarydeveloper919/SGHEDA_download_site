@@ -27,6 +27,18 @@ const Navbar = ({ toggle }) => {
   //     console.error("Download failed: ", e);
   //   }
   // };
+  const handleDownload = async () => {
+    let res = await fetch(
+      `${process.env.REACT_APP_SERVER_ADDRESS}/api/download`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    console.log(res.json());
+  };
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -115,7 +127,7 @@ const Navbar = ({ toggle }) => {
             >
               <NavBtnLink
                 style={{ height: "60%" }}
-                href={`${process.env.REACT_APP_SERVER_ADDRESS}/api/download`}
+                onClick={handleDownload}
                 rel="noreferrer"
               >
                 Download File

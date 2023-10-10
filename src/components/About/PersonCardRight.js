@@ -6,24 +6,51 @@ const PersonCardRight = () => {
       style={{
         width: "100%",
         display: "flex",
-        justifyContent: "flex-end",
+        justifyContent: "center",
         marginTop: "20px",
       }}
     >
+      <div style={{ height: "20vw", position: "relative", marginRight: "4vw" }}>
+        <img
+          src="image/person2.png"
+          style={{
+            height: "20vw",
+            width: "20vw",
+            borderRadius: "10px",
+            borderWidth: "10px",
+            borderColor: "#1B233F",
+          }}
+          alt="Person"
+        />
+        <div
+          style={{
+            backgroundColor: "rgba(255,255,255,0.2)",
+            width: "20vw",
+            height: "4vw",
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            borderRadius: "10px",
+            padding: "10px",
+          }}
+        >
+          <CoverH1 style={{ fontSize: "25px" }}>Eric Snow</CoverH1>
+          <CoverH1 style={{ fontSize: "20px", marginTop: "3px" }}>
+            Chief Executive Officer
+          </CoverH1>
+        </div>
+      </div>
       <div
         style={{
-          width: "50vw",
           display: "flex",
           flexDirection: "row",
-          backgroundColor: "#041321",
           padding: "10px",
           borderRadius: "10px",
         }}
       >
         <div
           style={{
-            width: "25vw",
-            marginRight: "4vw",
+            width: "50vw",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -41,36 +68,6 @@ const PersonCardRight = () => {
             Air Conditioning Engineers), AEE (Association of Energy Engineers),
             ASAE (American Society of Association
           </CoverH1>
-        </div>
-        <div style={{ height: "20vw", position: "relative" }}>
-          <img
-            src="image/person2.png"
-            style={{
-              height: "20vw",
-              width: "20vw",
-              borderRadius: "10px",
-              borderWidth: "10px",
-              borderColor: "#1B233F",
-            }}
-            alt="Person"
-          />
-          <div
-            style={{
-              backgroundColor: "rgba(255,255,255,0.2)",
-              width: "20vw",
-              height: "4vw",
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              borderRadius: "10px",
-              padding: "10px",
-            }}
-          >
-            <CoverH1 style={{ fontSize: "25px" }}>Jeff Hammond</CoverH1>
-            <CoverH1 style={{ fontSize: "20px", marginTop: "3px" }}>
-              EXECUTIVE DIRECTOR
-            </CoverH1>
-          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { CoverH1 } from "./AboutElements";
-const PersonCard = () => {
+const PersonCard = (props) => {
+  const { url, name, role } = props;
   return (
     <div
       style={{
@@ -18,7 +19,7 @@ const PersonCard = () => {
       >
         <div style={{ height: "13vw", position: "relative" }}>
           <img
-            src="image/person1.png"
+            src={url}
             style={{
               height: "13vw",
               width: "13vw",
@@ -40,9 +41,9 @@ const PersonCard = () => {
               padding: "10px",
             }}
           >
-            <CoverH1 style={{ fontSize: "20px" }}>Jeff Hammond</CoverH1>
+            <CoverH1 style={{ fontSize: "20px" }}>{name}</CoverH1>
             <CoverH1 style={{ fontSize: "15px", marginTop: "3px" }}>
-              EXECUTIVE DIRECTOR
+              {role}
             </CoverH1>
           </div>
         </div>

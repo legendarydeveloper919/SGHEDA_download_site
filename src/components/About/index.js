@@ -13,6 +13,7 @@ import {
 import StoryFieldCardRight from "./StoryFieldCardRight";
 import StoryFieldCardLeft from "./StoryFieldCardLeft";
 import PersonCard from "./PersonCard";
+import PersonCardRight from "./PersonCardRight";
 const AboutSection = () => {
   var settings = {
     dots: true,
@@ -63,6 +64,15 @@ const AboutSection = () => {
           padding: "50px",
         }}
       >
+        <CoverH1 style={{ fontSize: 38, color: "#000" }}>Our Founder</CoverH1>
+        <PersonCardRight />
+      </div>
+      <div
+        style={{
+          // background: "#051728",
+          padding: "10px",
+        }}
+      >
         <CoverH1 style={{ fontSize: 38, color: "#000" }}>Our Team</CoverH1>
         <CoverH1 style={{ fontSize: 25, color: "#3e3e3e" }}>
           SGHEDA is the ideal bridge between the latest technology and the
@@ -71,19 +81,25 @@ const AboutSection = () => {
         <div style={{ width: "50%", margin: "auto", marginTop: "30px" }}>
           <Slider {...settings}>
             <div>
-              <PersonCard />
+              <PersonCard
+                url={"image/Joaquin Mendez.png"}
+                name={"Joaquin Mendez"}
+                role={"Mechanical Engineer"}
+              />
             </div>
             <div>
-              <PersonCard />
+              <PersonCard
+                url={"image/Vladyslav Moroz.png"}
+                name={"Vladyslav Moroz"}
+                role={"FullStack Developer"}
+              />
             </div>
             <div>
-              <PersonCard />
-            </div>
-            <div>
-              <PersonCard />
-            </div>
-            <div>
-              <PersonCard />
+              <PersonCard
+                url={"image/Peter Chen.png"}
+                name={"Peter Chen"}
+                role={"Project Manager"}
+              />
             </div>
           </Slider>
         </div>

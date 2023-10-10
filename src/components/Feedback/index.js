@@ -24,7 +24,7 @@ export default function FeedbackSection() {
           <div>
             <div
               style={{
-                padding: "30px",
+                padding: "50px",
                 display: "flex",
                 justifyContent: "center",
                 position: "relative",
@@ -35,8 +35,8 @@ export default function FeedbackSection() {
                 className="avatar"
                 alt="avatar"
                 style={{
-                  width: "50px",
-                  height: "50px",
+                  width: "100px",
+                  height: "100px",
                   borderRadius: "50px",
                   position: "absolute",
                   zIndex: 1,
@@ -45,13 +45,13 @@ export default function FeedbackSection() {
               />
               <h3
                 style={{
-                  padding: "30px",
+                  padding: "60px",
                   backgroundColor: "rgba(255,255,255,0.3)",
                   filter: "brightness(120%)", // Example filter property
                   borderRadius: "10px",
                   width: "90%",
                   textAlign: "center",
-                  fontSize: "16px",
+                  fontSize: "23px",
                   fontWeight: "normal",
                   color: "white",
                 }}
@@ -64,7 +64,7 @@ export default function FeedbackSection() {
           <div>
             <div
               style={{
-                padding: "30px",
+                padding: "50px",
                 display: "flex",
                 justifyContent: "center",
                 position: "relative",
@@ -75,8 +75,8 @@ export default function FeedbackSection() {
                 className="avatar"
                 alt="avatar"
                 style={{
-                  width: "50px",
-                  height: "50px",
+                  width: "100px",
+                  height: "100px",
                   borderRadius: "50px",
                   position: "absolute",
                   zIndex: 1,
@@ -85,13 +85,13 @@ export default function FeedbackSection() {
               />
               <h3
                 style={{
-                  padding: "30px",
+                  padding: "60px",
                   backgroundColor: "rgba(255,255,255,0.3)",
                   filter: "brightness(120%)", // Example filter property
                   borderRadius: "10px",
                   width: "90%",
                   textAlign: "center",
-                  fontSize: "16px",
+                  fontSize: "23px",
                   fontWeight: "normal",
                   color: "white",
                 }}
