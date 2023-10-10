@@ -12,7 +12,7 @@ const PersonCardRight = () => {
     >
       <div style={{ height: "20vw", position: "relative", marginRight: "4vw" }}>
         <img
-          src="image/person2.png"
+          src="image/Eric Snow.png"
           style={{
             height: "20vw",
             width: "20vw",
@@ -50,13 +50,15 @@ const PersonCardRight = () => {
       >
         <div
           style={{
-            width: "50vw",
+            width: "35vw",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <CoverH1 style={{ fontSize: "20px", color: "#738A9D" }}>
+          <CoverH1
+            style={{ fontSize: "24px", color: "#738A9D", lineHeight: "30px" }}
+          >
             Jeff Hammond is Executive Director at the International Ground
             Source Heat Pump Association (IGSHPA). Jeff earned a B.S. in
             business administration from the University of Saint Francis in Fort

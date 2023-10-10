@@ -64,6 +64,7 @@ const ContactSection = () => {
             style={{
               textAlign: "center",
               fontSize: "28px",
+              marginTop: "20px",
             }}
           >
             We reserve the right to respond to emails as time and other projects

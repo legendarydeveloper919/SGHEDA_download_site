@@ -47,6 +47,7 @@ const AboutSection = () => {
             style={{
               textAlign: "center",
               fontSize: "28px",
+              marginTop: "20px",
             }}
           >
             SGHEDA is the ideal bridge between the latest technology and the

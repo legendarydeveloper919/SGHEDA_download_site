@@ -14,7 +14,7 @@ const Description = () => {
   let imageIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   imageIndex.forEach((index) => {
     slideImages.push({
-      url: `/image/validation/${index}.png`,
+      url: `/image/validate/${index}.png`,
       alt: `slideImage${index}`,
     });
   });
